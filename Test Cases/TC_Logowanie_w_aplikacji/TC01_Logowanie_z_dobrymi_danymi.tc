@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC01_Logowanie_z_dobrymi_danymi</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4d3685fe-e7e1-4382-b489-175c666c96f1</testCaseGuid>
+   <variable>
+      <defaultValue>' New Post'</defaultValue>
+      <description>Zawartosc linku z tworzeniem nowego posta</description>
+      <id>53cc0ca8-5e90-4fd8-8fe8-45ca40b924bb</id>
+      <masked>false</masked>
+      <name>new_post_anchor</name>
+   </variable>
+</TestCaseEntity>

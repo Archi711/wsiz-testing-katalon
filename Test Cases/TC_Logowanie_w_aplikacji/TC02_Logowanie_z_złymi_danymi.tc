@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC02_Logowanie_z_złymi_danymi</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c98d9923-b44d-4477-965b-db27ee1039e5</testCaseGuid>
+   <variable>
+      <defaultValue>'email or password is invalid'</defaultValue>
+      <description></description>
+      <id>95755d82-929e-47d0-a18a-8987e450fead</id>
+      <masked>false</masked>
+      <name>login_error_text</name>
+   </variable>
+</TestCaseEntity>
