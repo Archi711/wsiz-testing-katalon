@@ -3,6 +3,9 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+
+import org.junit.After
+
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -16,22 +19,22 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser(rawUri=GlobalVariable.url)
-
 WebUI.maximizeWindow()
+WebUI.click(findTestObject('Home/btn_signUp'))
+WebUI.setText(findTestObject('PageSignUp/input_username'), GlobalVariable.su_username)
+WebUI.setText(findTestObject('PageSignUp/input_email'), GlobalVariable.email)
+WebUI.setEncryptedText(findTestObject('PageSignUp/input_password'), GlobalVariable.pwd)
+WebUI.click(findTestObject('Object Repository/PageSignIn/btn_signUp_form'))
 
-WebUI.click(findTestObject('Home/btn_signIn'))
+String new_post_button_text = WebUI.getText(findTestObject('Home-LoggedIn/btn_newPost'))
+assert new_post_anchor == new_post_button_text
 
-for (def row = 3; row <= findTestData('Data Files/conduit/LoginData').getRowNumbers(); row++)
-{
-	WebUI.setText(findTestObject('PageSignUp/input_email'),
-		 findTestData('Data Files/conduit/LoginData').getValue('email', row))
-	WebUI.setText(findTestObject('PageSignUp/input_password'), 
-		findTestData('Data Files/conduit/LoginData').getValue('password', row))
+WebUI.click(findTestObject('Object Repository/Home-LoggedIn/btn_settings'))
+WebUI.setText(findTestObject('Object Repository/PageSettings/input_username'), GlobalVariable.s_username)
+WebUI.setText(findTestObject('Object Repository/PageSettings/input_bio'), GlobalVariable.s_bio)
+WebUI.click(findTestObject('Object Repository/PageSettings/btn_updateSettings'))
 
-	WebUI.click(findTestObject('Object Repository/PageSignIn/btn_signUp_form'))
-
-	String new_post_button_text = WebUI.getText(findTestObject('Object Repository/PageSignIn/btn_newPost'))
-	assert new_post_anchor == new_post_button_text
-}
+String new_username = WebUI.getText(findTestObject('Object Repository/Home-LoggedIn/btn_username_profile'))
+assert new_username == GlobalVariable.s_username
 
 WebUI.closeBrowser()

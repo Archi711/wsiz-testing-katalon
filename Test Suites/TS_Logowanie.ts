@@ -27,12 +27,18 @@
       <guid>7fc94ab6-fdce-4ef9-88b4-bd6668f66b42</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TC_Logowanie_w_aplikacji/TC01_Logowanie_z_dobrymi_danymi</testCaseId>
+      <testCaseId>Test Cases/TC_Logowanie_w_aplikacji/TC01_Logowanie_z_dobrymi_danymi-nowy_post</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
          <variableId>53cc0ca8-5e90-4fd8-8fe8-45ca40b924bb</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>74f067d2-5bcd-4c24-9900-a63c94b26e6b</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

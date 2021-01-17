@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC01_Logowanie_z_dobrymi_danymi</name>
+   <name>TC01_Rejestracja_w_aplikacji_z_poprawnymi_danymi-edycja_danych</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>4d3685fe-e7e1-4382-b489-175c666c96f1</testCaseGuid>
+   <testCaseGuid>4bf761df-b823-4b51-8665-6890228bd0b5</testCaseGuid>
    <variable>
       <defaultValue>' New Post'</defaultValue>
       <description>Zawartosc linku z tworzeniem nowego posta</description>
-      <id>53cc0ca8-5e90-4fd8-8fe8-45ca40b924bb</id>
+      <id>27b3df30-e960-4f96-b9c1-8c627f4ec0a2</id>
       <masked>false</masked>
       <name>new_post_anchor</name>
    </variable>

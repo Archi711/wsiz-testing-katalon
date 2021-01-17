@@ -11,7 +11,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Nazwa użytkownika do formularza rejestracyjnego</description>
-      <initValue>'test_username_wsiz_8'</initValue>
+      <initValue>'test_username_wsiz_D'</initValue>
       <name>su_username</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -21,7 +21,37 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Email/Login użytkownika</description>
-      <initValue>'test_wsiz_8@test.pl'</initValue>
+      <initValue>'test_wsiz_D@test.pl'</initValue>
       <name>email</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>tytuł testowego artykułu</description>
+      <initValue>'---TEST---'</initValue>
+      <name>articleTitle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>opis testowego artykułu</description>
+      <initValue>'Test'</initValue>
+      <name>articleAbout</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>treść testowego artykułu</description>
+      <initValue>'TEST'</initValue>
+      <name>articleBody</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>tagi testowego artykułu</description>
+      <initValue>'test'</initValue>
+      <name>articleTags</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>testowa nazwa uzytkownika do zmiany</description>
+      <initValue>'test_CHANGE_D'</initValue>
+      <name>s_username</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>tekst do wpisu sekcji BIO</description>
+      <initValue>'BIO_TEST'</initValue>
+      <name>s_bio</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

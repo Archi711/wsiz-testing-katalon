@@ -15,7 +15,7 @@
       <guid>6e5bb5d1-d6ff-423c-b33a-c732e5230d41</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TC_Rejestracja_w_aplikacji/TC01_Rejestracja_w_aplikacji_z_poprawnymi_danymi</testCaseId>
+      <testCaseId>Test Cases/TC_Rejestracja_w_aplikacji/TC01_Rejestracja_w_aplikacji_z_poprawnymi_danymi-edycja_danych</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
